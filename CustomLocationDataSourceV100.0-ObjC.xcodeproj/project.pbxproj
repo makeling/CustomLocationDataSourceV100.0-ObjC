@@ -13,6 +13,7 @@
 		E11F08571E2E0AF00065501C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E11F08551E2E0AF00065501C /* Main.storyboard */; };
 		E11F08591E2E0AF00065501C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E11F08581E2E0AF00065501C /* Assets.xcassets */; };
 		E11F085C1E2E0AF00065501C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E11F085A1E2E0AF00065501C /* LaunchScreen.storyboard */; };
+		E19E066B1E2F5A89009422C0 /* ArcGIS.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E19E066A1E2F5A89009422C0 /* ArcGIS.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		E11F08581E2E0AF00065501C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E11F085B1E2E0AF00065501C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E11F085D1E2E0AF00065501C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E19E066A1E2F5A89009422C0 /* ArcGIS.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ArcGIS.bundle; path = ../../../Library/SDKs/ArcGIS/iOS/Frameworks/Static/ArcGIS.framework/Versions/Current/Resources/ArcGIS.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		E11F084B1E2E0AF00065501C /* CustomLocationDataSourceV100.0-ObjC */ = {
 			isa = PBXGroup;
 			children = (
+				E19E066A1E2F5A89009422C0 /* ArcGIS.bundle */,
 				E11F084F1E2E0AF00065501C /* AppDelegate.h */,
 				E11F08501E2E0AF00065501C /* AppDelegate.m */,
 				E11F08521E2E0AF00065501C /* ViewController.h */,
@@ -140,6 +143,7 @@
 			files = (
 				E11F085C1E2E0AF00065501C /* LaunchScreen.storyboard in Resources */,
 				E11F08591E2E0AF00065501C /* Assets.xcassets in Resources */,
+				E19E066B1E2F5A89009422C0 /* ArcGIS.bundle in Resources */,
 				E11F08571E2E0AF00065501C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,8 +276,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GDPQ8EGCXX;
+				FRAMEWORK_SEARCH_PATHS = /Users/maklmac/Library/SDKs/ArcGIS/iOS/Frameworks/Static;
 				INFOPLIST_FILE = "CustomLocationDataSourceV100.0-ObjC/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					ArcGIS,
+					"-l",
+					"c++",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "makl.CustomLocationDataSourceV100-0-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -284,8 +296,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GDPQ8EGCXX;
+				FRAMEWORK_SEARCH_PATHS = /Users/maklmac/Library/SDKs/ArcGIS/iOS/Frameworks/Static;
 				INFOPLIST_FILE = "CustomLocationDataSourceV100.0-ObjC/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					ArcGIS,
+					"-l",
+					"c++",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "makl.CustomLocationDataSourceV100-0-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -310,6 +330,7 @@
 				E11F08621E2E0AF00065501C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

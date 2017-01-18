@@ -12,6 +12,7 @@
 
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet AGSMapView *mapView;
 
 @end
 
