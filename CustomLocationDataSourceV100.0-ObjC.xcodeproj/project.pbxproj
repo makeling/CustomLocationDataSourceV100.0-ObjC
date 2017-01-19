@@ -13,6 +13,7 @@
 		E11F08571E2E0AF00065501C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E11F08551E2E0AF00065501C /* Main.storyboard */; };
 		E11F08591E2E0AF00065501C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E11F08581E2E0AF00065501C /* Assets.xcassets */; };
 		E11F085C1E2E0AF00065501C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E11F085A1E2E0AF00065501C /* LaunchScreen.storyboard */; };
+		E1487F521E306ABC003B93DE /* CustomLocationDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E1487F511E306ABC003B93DE /* CustomLocationDataSource.m */; };
 		E19E066B1E2F5A89009422C0 /* ArcGIS.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E19E066A1E2F5A89009422C0 /* ArcGIS.bundle */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,8 @@
 		E11F08581E2E0AF00065501C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E11F085B1E2E0AF00065501C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E11F085D1E2E0AF00065501C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1487F501E306ABC003B93DE /* CustomLocationDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomLocationDataSource.h; sourceTree = "<group>"; };
+		E1487F511E306ABC003B93DE /* CustomLocationDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomLocationDataSource.m; sourceTree = "<group>"; };
 		E19E066A1E2F5A89009422C0 /* ArcGIS.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ArcGIS.bundle; path = ../../../Library/SDKs/ArcGIS/iOS/Frameworks/Static/ArcGIS.framework/Versions/Current/Resources/ArcGIS.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +73,8 @@
 				E11F085A1E2E0AF00065501C /* LaunchScreen.storyboard */,
 				E11F085D1E2E0AF00065501C /* Info.plist */,
 				E11F084C1E2E0AF00065501C /* Supporting Files */,
+				E1487F501E306ABC003B93DE /* CustomLocationDataSource.h */,
+				E1487F511E306ABC003B93DE /* CustomLocationDataSource.m */,
 			);
 			path = "CustomLocationDataSourceV100.0-ObjC";
 			sourceTree = "<group>";
@@ -155,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1487F521E306ABC003B93DE /* CustomLocationDataSource.m in Sources */,
 				E11F08541E2E0AF00065501C /* ViewController.m in Sources */,
 				E11F08511E2E0AF00065501C /* AppDelegate.m in Sources */,
 				E11F084E1E2E0AF00065501C /* main.m in Sources */,
